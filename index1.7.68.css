@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+*{font-family: Lato
+;}
+
+/* navbar */
+.navbar{display: flex; flex-direction: row; justify-content: space-between;  align-items: center; width: 100%; height: 64px; background-color: white; position: fixed;}
+.navbar_logo{margin-left: 24px; display: flex; flex-direction: row;}
+#colmaracademy_logoname{width: 40px;}
+#colmaracademy_logoname2{height: 32px;}
+#colmaracademy_logoname2{height: 32px; font-weight: lighter;}
+.navbar_link{margin-right: 24px; display: flex; flex-direction: row; gap: 16px;}
+#signin{text-decoration: none; color: black;}
+.navbar_linkicon{display: none;}
+
+/* main */
+/* hero */
+.hero{display: flex; flex-direction: row; align-items: center; gap: 24px; background-color: #D7D7D7;}
+#colmaracademy_banner{margin-left: 24px; margin-top: 32px; margin-bottom: 32px; width: 60%;}
+.hero_content{display: flex; flex-direction: column; gap: 32px;}
+#hero_h1{width: 30rem; font-size: 3rem; font-weight: 900;}
+#hero_detail{width: 30rem; font-size: 1.5rem; font-weight: 700;}
+#hero_button{width: 25rem; padding-top: 8px; padding-bottom: 8px; text-decoration: none; text-align: center; color: white; border: none; background-color: #4A4A4A;}
+
+/* information */
+.information{display: flex; flex-direction: row; gap: 24px; margin-top: 32px;}
+.information_main{margin-left: 24px; width: 60%;}
+#information_main_title{margin-top: 32px; margin-bottom: 24px; font-size: 2rem; font-weight: 900;}
+#information_main_source{margin-top: 32px; margin-bottom: 32px;}
+
+.information_list{width: 40%;}
+.list{width: 100%; display: flex; flex-direction: row; gap: 24px; border: solid 1px #D7D7D7; padding: 16px;}
+.list img{width: 35%;}
+.list div{width: 65%;}
+.list div h3{font-size: 1.5rem; font-weight: 750;}
+.list div p{margin-top: 8px; margin-bottom: 8px;}
+.list div a{text-decoration: none; color: darkblue;}
+.last{background-color: #D7D7D7;}
+
+/* course */
+.courses{background-color: #D7D7D7;}
+.courses h2{margin-top: 32px; font-size: 2rem; font-weight: 900; text-align: center;}
+.course{margin: 32px 72px 32px 72px;}
+.course_list{display: flex; flex-direction: row; flex-wrap: wrap; gap: 32px;}
+.subject{display: flex; flex-direction: column; background-color: white;}
+.subject div h3{padding-left: 16px; padding-top: 16px; font-size: 1.5rem; font-weight: 750;}
+.subject img{width: 26rem;}
+#category{padding-left: 16px; padding-top: 8px; padding-bottom: 8px;}
+#subject_detail{width: 20rem; padding-left: 16px; padding-right: 16px; padding-bottom: 24px;}
+
+/* thesis */
+/* .thesis{width: 100%;} */
+.thesis h2{margin-top: 32px; font-size: 2rem; font-weight: 900; text-align: center;}
+.thesis_content{display: flex; width: 100%; flex-direction: row; gap: 24px; margin-top: 32px;}
+.thesis_main{margin-left: 24px; width: 60%;}
+#thesis_main_title{margin-top: 32px; margin-bottom: 24px; font-size: 1.5rem; font-weight: 900;}
+#thesis_main_detail{margin-bottom: 32px;}
+/* .thesis_list{width: 40%;} */
+.content{border: 0px; background-color: #D7D7D7;}
+.others{border: 0px;}
+
+/* footer */
+footer{margin: 16px 24px; display: flex; flex-direction: row; justify-content: space-between;}
+footer div{display: flex; flex-direction: row; gap: 16px;}
+footer a{text-decoration: none; color: black;}
+
+@media(max-width: 480px){
+    .navbar_logo{display: none;}
+    .navbar_link{display: none;}
+    .navbar_linkicon{width: 100%; display: flex; flex-direction: row; justify-content: space-evenly; align-items: center;}
+    .navbar_linkicon a img{width: 40px;}
+
+    /* .hero{display: flex; flex-direction: column;} */
+
+    .information_main{display: none;}
+    .information_list{width: 100%; border: 0px;}
+}

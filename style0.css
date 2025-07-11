@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+*{box-sizing: border-box; margin: 0; padding: 0;}
+body{font-family: "Inter", sans-serif;}
+.hello{color: lawngreen;} /*Class ใหญ่กว่า Element*/
+#hello{color: cornflowerblue; background-color: bisque;}
+h1{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: peru !important;} /*ใช้ Element กำหนด*/
+#hello{height: 100px;color: white; border: solid 5px royalblue; padding: 50px; margin: 100px; font-size: 2rem; } /*margin อันใหญ่จะกินพื้นที่ margin อันที่เล็กกว่า*/ /*กำหนดให้อยู่ตรงกลางต้องกำหนดความกว้าง width ของ block ก่อนแล้วค่อยกำหนด margin: 0,auto;*/ 
+p{background-color: darkseagreen; margin: 1rem; padding: 1rem; height: 100px;}
+p:hover{background-color: blue; color: white; cursor: cell;} /*Pseudo Class*/
+#text::before{content: "😊"; font-weight: 700;} /*Pseudo Element*/
+#text::selection{color: blueviolet; background-color: aquamarine;} /*Pseudo Element เปลี่ยนสีตอน highlight cover ข้อความ*/
+/* #text{display: none;} ไม่แสดงผล */
+span{color: black; font-weight: 700; background-color: crimson; height: 100px;} /*ความสูงไม่เพิ่ม เพราะเป็น span*/
